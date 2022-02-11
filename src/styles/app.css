@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+#map {
+  height: 65vh;
+}
+
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  will-change: auto !important;
+}
+
+.header {
+  background-image: url("../images/pattern-bg.png");
+  height: 35vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+  gap: 1rem;
+}
+
+.myTitle {
+  font-weight: 400;
+  font-size: 1.6em;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: #FCFEFF;
+}
+
+.serchLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.myInput {
+  height: 3rem;
+  font-family: inherit;
+  padding-left: 1.5em;
+  outline: none;
+  border-style: none;
+  border-radius: 10px 0px 0px 10px;
+  width: 30rem;
+  cursor: pointer;
+}
+
+.blackBtn {
+  background-color: #000100;
+  border-style: none;
+  width: 4em;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.blackBtn:hover {
+  background-color: #3E3E3E;
+}
+
+.infoConteiner {
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem;
+  width: 20vw;
+  border-left: solid;
+  border-left-width: thin;
+  border-image-source: linear-gradient(white 10%, #DCDCDC 80%, white 10%);
+}
+
+.border-gradient {
+  border-left: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+}
+
+.infoConteiner:first-child {
+  border-left: transparent;
+}
+
+.infoGrid {
+  position: absolute;
+  z-index: 1000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+  top: 25vh;
+  margin-inline: 10vw;
+}
+
+.infoDescription {
+  font-size: 10px;
+  font-weight: 700;
+  color: #979797;
+  letter-spacing: 0.1em;
+}
+
+.info {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+/*# sourceMappingURL=app.css.map */
