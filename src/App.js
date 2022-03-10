@@ -4,7 +4,7 @@ import leaflet from "leaflet";
 import { useEffect, useRef, useState } from "react";
 import { ReactComponent as Arrow } from "./images/icon-arrow.svg"
 function App() {
-  const [ipAdress, setIpAdress] = useState("186.130.10.130")
+  const [ipAdress, setIpAdress] = useState("")
   const [info, setInfo] = useState(null);
   const [geoLocation, setGeoLocation] = useState([51.505, -0.09]);
   const [inputData, setInputData] = useState("");
