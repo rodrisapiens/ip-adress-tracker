@@ -27,11 +27,6 @@ function App() {
     }).addTo(map.current);
     L.marker(geoLocation).addTo(map.current);
   }, [])
-
-
-  /* lat: -34.65183
-  ​
- lng: -58.63963 */
   useEffect(() => {
     if (!firstRender) {
       map.current.setView([info.location.lat, info.location.lng], 13);
